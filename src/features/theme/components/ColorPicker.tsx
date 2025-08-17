@@ -1,11 +1,10 @@
-import { useTheme } from "@/contexts/themes/ThemeContext"
+import { useTheme } from "../context/ThemeContext"
 import { THEME_COLORS } from "@/shared/constants"
 
 export function ColorPicker() {
   const { state, dispatch } = useTheme()
   
   const colors = Object.entries(THEME_COLORS)
-              console.log(colors)
 
  return (
     <div className="color-picker">
