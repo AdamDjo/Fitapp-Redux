@@ -1,9 +1,11 @@
 import { useTheme } from "@/features/theme"
+import Link from "next/link"
 
 interface NavItem {
   icon: string
   label: string
   active: boolean
+  href: string
 }
 
 interface AppSidebarProps {
@@ -19,12 +21,14 @@ export function AppSidebar({ navItems }: AppSidebarProps) {
         <ul className="nav-list">
           {navItems.map((item, index) => (
             <li key={index}>
-              <div className={`nav-item ${item.active ? 'active' : ''}`}>
-                <span className="nav-icon">{item.icon}</span>
-                {!state.sidebarCollapsed && (
-                  <span className="nav-label">{item.label}</span>
-                )}
-              </div>
+              <Link href={item.href}>
+                <div className={`nav-item ${item.active ? 'active' : ''}`}>
+                  <span className="nav-icon">{item.icon}</span>
+                  {!state.sidebarCollapsed && (
+                    <span className="nav-label">{item.label}</span>
+                  )}
+                </div>
+              </Link>
             </li>
           ))}
         </ul>

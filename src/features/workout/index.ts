@@ -1,11 +1,21 @@
-// Workout feature barrel export
-// TODO: Implement workout components, hooks, and services
+export { default as workoutSlice } from './store/workoutSlice'
+export {
+  startSession,
+  endSession,
+  setCurrentExercise,
+  addSet,
+  removeSet,
+  updateSet,
+  clearSets,
+  setError,
+  clearError,
+  selectExercises,
+  selectSets,
+  selectIsSessionActive,
+  selectCurrentExercise,
+  selectSetsByExercise,
+} from './store/workoutSlice'
 
-// Placeholder exports for future implementation
-// export { WorkoutForm } from './components/WorkoutForm'
-// export { ExerciseList } from './components/ExerciseList'
-// export { useWorkout } from './hooks/useWorkout'
-// export { workoutSlice } from './store/workoutSlice'
+export type { Exercise, WorkoutSet, WorkoutState } from './types'
 
-// Types
-// export type { Workout, Exercise, WorkoutSet } from './types'
+export * from './components'
