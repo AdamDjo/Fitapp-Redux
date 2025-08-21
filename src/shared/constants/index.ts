@@ -1,5 +1,3 @@
-//   # Constantes
-
 import { ThemeConfig } from "../types"
 
 
