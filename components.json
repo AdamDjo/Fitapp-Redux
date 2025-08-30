@@ -1,0 +1,41 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "css": "src/app/globals.css",
+    "baseColor": "blue",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@/shared/ui",
+    "utils": "@/shared/utils",
+    "ui": "@/shared/ui",
+    "lib": "@/shared/utils",
+    "hooks": "@/shared/hooks"
+  },
+  "iconLibrary": "lucide",
+    "componentMapping": {
+    "atoms": [
+      "button", "input", "label", "badge", "separator",
+      "skeleton", "typography", "textarea", "checkbox",
+      "radio-group", "switch", "progress"
+    ],
+    "molecules": [
+      "avatar", "tooltip", "popover", "dropdown-menu",
+      "hover-card", "menubar", "navigation-menu",
+      "tabs", "toggle", "slider", "alert"
+    ],
+    "organisms": [
+      "card", "dialog", "sheet", "table", "sidebar",
+      "form", "calendar", "data-table", "command",
+      "accordion", "alert-dialog", "aspect-ratio",
+      "breadcrumb", "collapsible", "context-menu",
+      "resizable", "scroll-area", "select", "sonner",
+      "toast", "toggle-group", "pagination"
+    ]
+  }
+
+}

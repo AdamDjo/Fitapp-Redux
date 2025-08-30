@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/features/theme";
 import StoreProvider from "@/store/StoreProvider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import { Architects_Daughter, Roboto_Mono } from "next/font/google";
+
+const notebookSans = Architects_Daughter({
+  variable: "--font-sans",
   subsets: ["latin"],
+  weight: "400", // ⚠ obligatoire
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notebookMono = Roboto_Mono({
+  variable: "--font-mono",
   subsets: ["latin"],
+  weight: "400", // ⚠ obligatoire
 });
 
 export const metadata: Metadata = {
@@ -26,11 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+     <body className={`${notebookSans.variable} ${notebookMono.variable} antialiased`}>
+
         <StoreProvider>
-          <ThemeProvider>{children}</ThemeProvider>
+          {children}
         </StoreProvider>
       </body>
     </html>
