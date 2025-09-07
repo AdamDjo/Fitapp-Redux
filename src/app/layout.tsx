@@ -10,7 +10,7 @@ const notebookSans = Architects_Daughter({
   weight: "400", // ⚠ obligatoire
 });
 
-const notebookMono = Roboto_Mono({
+const roboto = Roboto_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
   weight: "400", // ⚠ obligatoire
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     <body className={`${notebookSans.variable} ${notebookMono.variable} antialiased`}>
+     <body className={`${roboto.variable} ${roboto.variable} antialiased`}>
 
         <StoreProvider>
           {children}
