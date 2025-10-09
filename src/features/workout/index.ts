@@ -1,21 +1,17 @@
 export { default as workoutSlice } from './store/workoutSlice'
 export {
-  startSession,
-  endSession,
-  setCurrentExercise,
-  addSet,
-  removeSet,
-  updateSet,
-  clearSets,
+  // Actions essentielles
   setError,
   clearError,
+  setLoading,
+  // Sélecteurs essentiels
   selectExercises,
-  selectSets,
-  selectIsSessionActive,
-  selectCurrentExercise,
-  selectSetsByExercise,
+  selectLoading,
+  selectError,
 } from './store/workoutSlice'
 
-export type { Exercise, WorkoutSet, WorkoutState } from './types'
+export type { Exercise, WorkoutSet, WorkoutState, WeeklyProgram, DailySession, DayOfWeek } from './types'
 
-export * from './components'
+// export * from './components'
+export * from './constants/exercises'
+export * from './utils'

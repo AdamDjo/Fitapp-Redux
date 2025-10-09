@@ -40,7 +40,12 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+#documentation
+/docs
+
 # IA
 /.claude/
-/.roo/
+.roo/
+scripts/
+/.roomodes
 CLAUDE.md

@@ -1,10 +1,10 @@
 import { Home, Palette, Dumbbell, TrendingUp, Bell, User, Menu } from 'lucide-react'
 import { cookies } from "next/headers"
-import { 
-  SidebarProvider, 
-  Sidebar, 
-  SidebarContent, 
-  SidebarHeader, 
+import {
+  SidebarProvider,
+  Sidebar,
+  SidebarContent,
+  SidebarHeader,
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
@@ -31,21 +31,21 @@ export default async function AppLayout({
       label: 'Dashboard',
       href: '/'
     },
-    {
-      icon: Palette,
-      label: 'Thème',
-      href: '/theme'
-    },
+    // {
+    //   icon: Palette,
+    //   label: 'Thème',
+    //   href: '/theme'
+    // },
     {
       icon: Dumbbell,
       label: 'Workouts',
       href: '/workout'
     },
-    {
-      icon: TrendingUp,
-      label: 'Progression',
-      href: '/progression'
-    },
+    // {
+    //   icon: TrendingUp,
+    //   label: 'Progression',
+    //   href: '/progression'
+    // },
   ]
 
   return (
