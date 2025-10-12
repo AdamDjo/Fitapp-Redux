@@ -23,6 +23,6 @@ export {
 
 export type { Exercise, WorkoutSet, WorkoutState, WeeklyProgram, DailySession, DayOfWeek } from './types'
 
-// export * from './components'
+export * from './components'
 export * from './constants/exercises'
 export * from './utils'
